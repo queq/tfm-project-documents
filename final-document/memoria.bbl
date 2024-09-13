@@ -1,0 +1,102 @@
+\begin{thebibliography}{10}
+
+\bibitem{abdelnabi2020}
+{\sc Abdelnabi, S., Krombholz, K., and Fritz, M.}
+\newblock Visualphishnet: Zero-day phishing website detection by visual
+  similarity.
+\newblock In {\em Proceedings of the 2020 ACM SIGSAC Conference on Computer and
+  Communications Security\/} (New York, NY, USA, 2020), CCS '20, Association
+  for Computing Machinery, p.~1681–1698.
+
+\bibitem{abdillah2022}
+{\sc Abdillah, R., Shukur, Z., Mohd, M., and Murah, T. M.~Z.}
+\newblock Phishing classification techniques: A systematic literature review.
+\newblock {\em IEEE Access 10\/} (2022), 41574--41591.
+
+\bibitem{akinyelu2019}
+{\sc Akinyelu, A.~A.}
+\newblock Machine learning and nature inspired based phishing detection: A
+  literature survey.
+\newblock {\em International Journal on Artificial Intelligence Tools 28}, 05
+  (2019), 1930002.
+
+\bibitem{peggy2021}
+{\sc Chinn, P.~L.}
+\newblock The traditional literature review.
+\newblock {\em Nurse Author \& Editor 31}, 3-4 (2021), 62--64.
+
+\bibitem{enisa2023}
+{\sc {European Union Agency for Cybersecurity}}.
+\newblock {ENISA} {Threat} {Landscape}.
+\newblock Report/{Study}, {European Union Agency for Cybersecurity}, 2023.
+
+\bibitem{pep257}
+{\sc Goodger, D., and van Rossum, G.}
+\newblock Pep 257 - docstring conventions | peps.python.org, 2001.
+\newblock [Internet; accedido a 09/09/2024].
+
+\bibitem{gupta2021}
+{\sc Gupta, B.~B., Yadav, K., Razzak, I., Psannis, K., Castiglione, A., and
+  Chang, X.}
+\newblock A novel approach for phishing urls detection using lexical based
+  machine learning in a real-time environment.
+\newblock {\em Computer Communications 175\/} (2021), 47--57.
+
+\bibitem{kim2022}
+{\sc Kim, T., Park, N., Hong, J., and Kim, S.-W.}
+\newblock Phishing url detection: A network-based approach robust to evasion.
+\newblock In {\em Proceedings of the 2022 ACM SIGSAC Conference on Computer and
+  Communications Security\/} (New York, NY, USA, 2022), CCS '22, Association
+  for Computing Machinery, p.~1769–1782.
+
+\bibitem{pylint}
+{\sc {Logilab and Pylint contributors}}.
+\newblock Pylint 3.3.0-dev0 documentation, 2024.
+\newblock [Internet; accedido a 16/08/2024].
+
+\bibitem{moore2023}
+{\sc Moore, M.}
+\newblock {Top {Cybersecurity} {Threats} in 2023 - University of San Diego
+  Online Degrees}, 2024.
+\newblock [Internet; accedido a 26/04/2024].
+
+\bibitem{numpy}
+{\sc {NumPy team}}.
+\newblock numpy/numpy: The fundamental package for scientific computing with
+  python., 2024.
+\newblock [Internet; accedido a 09/09/2024].
+
+\bibitem{paliath2020}
+{\sc Paliath, S., Qbeitah, M.~A., and Aldwairi, M.}
+\newblock Phishout: Effective phishing detection using selected features.
+\newblock In {\em 2020 27th International Conference on Telecommunications
+  (ICT)\/} (2020), pp.~1--5.
+
+\bibitem{patel2024}
+{\sc Patel, H., Rehman, U., and Iqbal, F.}
+\newblock Evaluating the efficacy of large language models in identifying
+  phishing attempts, 2024.
+
+\bibitem{pypa}
+{\sc {PyPA}}.
+\newblock Pypa specifications - python packaging user guide, 2024.
+\newblock [Internet; accedido a 09/09/2024].
+
+\bibitem{safi2023}
+{\sc Safi, A., and Singh, S.}
+\newblock A systematic literature review on phishing website detection
+  techniques.
+\newblock {\em Journal of King Saud University - Computer and Information
+  Sciences 35}, 2 (2023), 590--611.
+
+\bibitem{vijayalakshmi2020}
+{\sc Vijayalakshmi, M., Mercy~Shalinie, S., Yang, M.~H., and U., R.~M.}
+\newblock Web phishing detection techniques: a survey on the
+  state‐of‐the‐art, taxonomy and future directions.
+\newblock {\em IET Networks 9}, 5 (9 2020), 235–246.
+
+\bibitem{yigit2024}
+{\sc Yigit, Y., Buchanan, W.~J., Tehrani, M.~G., and Maglaras, L.}
+\newblock Review of generative ai methods in cybersecurity, 2024.
+
+\end{thebibliography}

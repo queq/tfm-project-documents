@@ -1,0 +1,65 @@
+\capitulo{2}{Marco teórico y estado del arte}
+
+
+
+\section{Acerca del \textit{phishing}}
+
+El \textit{phishing} es un ataque de ingeniería social \cite{paliath2020}, bajo el cual un criminal busca apropiarse de la información personal de un individuo, como su nombre completo, credenciales de usuario, información bancaria; o en ocasiones con el objetivo de diseminar contenido malicioso en una red \cite{gupta2021}. En la Figura 1 se pueden apreciar que existen diversos tipos de ataques, consolidando al \textit{phishing} como una metodología de ataque amplia, y susceptible a ser transmitida por diferentes medios.
+
+\imagen{types_of_phishing_attacks}{Tipos de ataques de \textit{phishing} (adaptado de \cite{safi2023})}
+
+Los ataques de \textit{phishing} pueden transmitirse por diferentes medios, por ejemplo:
+
+\begin{itemize}
+    \item SMS;
+    \item Correos electrónicos;
+    \item Páginas web;
+    \item Redes sociales ($\mathbb{X}$, Facebook, etc.).
+\end{itemize}
+
+El tipo más común y estudiado son las páginas web \textit{phishing} \cite{abdillah2022}, esto explicado por la gran dimensión de Internet y porque este método usualmente se superpone con otros, por ejemplo, cuando hay enlaces maliciosos en el cuerpo de un SMS, \textit{tweet} o correo electrónico. Por esta relevancia subyacente se eligió como objeto de estudio las técnicas de detección de URLs \textit{phishing}.
+
+\section{Metodologías de detección de \textit{phishing} en páginas web} \label{metodologias-deteccion-phishing}
+
+Para inferir si un sitio web tiene contenido de \textit{phishing}, se suele valer de alguno de los siguientes atributos de la página, o de una combinación de ellos \cite{vijayalakshmi2020}:
+
+\begin{itemize}
+    \item URL;
+    \item Contenido de la página: literal, visual, y metadatos (HTML DOM);
+    \item Información sobre el dominio;
+\end{itemize}
+
+Los métodos basados en contenido de la página poseen varias desventajas, como complejidad en accederlo para un volumen elevado de páginas, especialmente en etapas exploratoria y de diseño; también son vulnerables a \textit{exploits} en el navegador \cite{kim2022} u ofuscación de código \cite{abdelnabi2020} para ocultar los propósitos maliciosos. Por tanto, se concluye que se encontraría el mejor desempeño y nivel de generalización al seleccionar atributos relacionados con la URL y el dominio de las páginas.
+
+Durante décadas de investigación, varias técnicas de detección de URLs \textit{phishing} han sido propuestas, desde basadas en listas negras o blancas (\textit{blacklist-based} / \textit{whitelist-based}); basadas en heurística (\textit{heuristic-based}); basadas en la naturaleza (\textit{Nature Inspired - NI}); hasta basadas en aprendizaje de máquinas (\textit{Machine Learning based - ML-based}) \cite{akinyelu2019}.
+
+Dentro de estas técnicas, las \textit{ML-based} se destacan por su desempeño superior debido a su capacidad de generalizar basado en la información provista al momento del diseño. Eventualmente los ataques se volverían más sofisticados por su capacidad de evadir reconocimiento, y de forma más notoria con la aparición de los modelos de IA generativa (\textit{GenAI}), y su habilidad de producir contenido orgánico a la vista de un ser humano.
+
+La aplicación de estas tecnologías de IA en la detección misma ha hecho frente a estas vulnerabilidades emergentes, y han demostrado una mayor capacidad de detección debido a su habilidad de detectar patrones más complejos, y las funcionalidades que poseen para realizar sintonización fina, siendo adaptables a situaciones específicas \cite{patel2024,yigit2024}. Dado el amplio uso de las técnicas \textit{ML-based} y su evidente relevancia en el ámbito de la investigación, se eligió profundizar en ellas de cara a la ejecución de este proyecto.
+
+\section{Revisión literaria}
+
+Como los resultados del proyecto planteado tienen una dependencia directa en hacer una revisión estructurada del estado del arte, se partió por encontrar un guía conciso que indicase pasos claros para reunir la información literaria previa a la ejecución. Así, basado en \cite{peggy2021}, se determinaron las etapas clave para revisión de la literatura. En la Figura 
+
+\begin{enumerate}
+    \item \textbf{Establecer el procedimiento a usar para seleccionar la el trabajo previo objeto de revisión.}\\\\
+          Se planteó una revisión del estado del arte con duración de 2 semanas, con el objetivo de identificar cuáles son las técnicas principales de detección de URLs \textit{phishing}. Esta búsqueda se realizó en las principales publicaciones a las que se tiene acceso público o mediante la Universidad de Valladolid (\href{https://dl.acm.org/}{ACM Digital Library}, \href{https://ieeexplore.ieee.org/}{IEEE Xplore}, \href{https://www.sciencedirect.com/}{ScienceDirect} y \href{https://arxiv.org/}{arXiv}), de artículos bajo la frase clave \textit{"phishing url detection"}.
+    \item \textbf{Establecer la ventana temporal que cubrirá la revisión.}\\\\
+          Se estimó que se demarcaría de forma adecuada la actualidad de los trabajos a analizar si fueron publicados con antigüedad no mayor a 5 años. Durante el tiempo dedicado a la búsqueda inicial, se recopilaron cerca de 200 artículos.
+    \item \textbf{Definir los elementos de cada trabajo que serán examinados en la revisión.}\\\\
+          De acuerdo a la conclusión de la sección \ref{metodologias-deteccion-phishing}, habiendo reducido el alcance en el ámbito de metodologías de detección a las \textit{ML-based}, se filtró la lista inicial de 200 artículos, mediante revisión de las secciones de abstract y metodología, pues se consideró suficiente y óptimo en cuanto a inversión del tiempo, ya que en esos apartados se obtendría el contexto del artículo y su relevancia al proyecto. Como resultado se documentó un consolidado de 16 trabajos relacionados, cuyo contenido fue verificado que fuese acerca de al menos un tipo de técnicas aplicadas de interés en detección de URLs \textit{phishing}, o alternativamente un artículo de revisión literaria.
+\end{enumerate}
+
+\section{Bibliotecas de manipulación de datos}
+
+El lenguaje de programación elegido para desarrollar el proyecto fue Python, debido a la disponibilidad amplia de bibliotecas de manipulación de datos y \textit{Machine Learning}.
+
+\section{Acerca de convenciones sobre elaboración de código y bibliotecas}
+
+Como uno de los objetivos señalados fue la implementación de un \textit{framework} para apoyar la creación de modelos predictores, se encontró importante asimilar conceptos de (1) mejores prácticas en elaboración de código, así como (2) documentación apropiada compatible para visibilizar la forma de uso del \textit{framework} en menús contextuales o cuando el desarrollador ejecute comandos de ayuda sobre algún método en particular.
+
+Sobre el primer numeral, se usó el analizador de código estático Pylint \cite{pylint}, para identificar de forma automática errores o divergencias al estándar de elaboración de código, en donde errores notables durante el desarrollo fueron por ejemplo en la nomenclatura de funciones, clases y variables; sentencias sin efecto en la ejecución; o mal uso de variables globales.
+
+Respecto al segundo numeral, se tomaron como referencia el PEP 257 - Docstring Conventions \cite{pep257}, el cual hace parte de las \textit{Python Enhancement Proposals} (PEP), iniciativas de mejora para Python, en este caso relacionada con definir convenciones y semántica asociada con las \textit{docstrings} de Python. Estas \textit{docstrings} son el encabezado de módulos, funciones, clases y métodos, los cuales sirven para documentar el propósito del código desarrollado, pero así mismo poblar las referencias mostradas al ejecutar comandos de ayuda sobre uso de elementos de una biblioteca en Python. Complementando la especificación de la PEP, se tomó como inspiración el estilo de documentación del código fuente en el proyecto NumPy \cite{numpy}.
+
+Como guía de creación de bibliotecas empaquetadas y definición de dependencias, se utilizaron las especificaciones PyPA (\textit{Python Packaging}) \cite{pypa}. La revisión de este aspecto permitió la creación de un paquete estándar para publicación a usuarios, como funciona con el resto de módulos estándar o de uso masivo por la comunidad en Python.
